@@ -128,9 +128,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
-    ],
+    
 
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
@@ -139,5 +137,5 @@ REST_FRAMEWORK = {
 
 mongoengine.connect(
     db="user_database",
-    host="mongodb+srv://amritchaturvedi1408_db_user:<db_password>@cluster0.9pucap1.mongodb.net/?appName=Cluster0"
+    host="mongodb+srv://amritchaturvedi1408_db_user:yH4i4k5nrvjdnqlg@cluster0.9pucap1.mongodb.net/?appName=Cluster0"
 )
